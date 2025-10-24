@@ -165,7 +165,32 @@ tr {
     border-radius: 10px 10px 0 0;
     object-fit: cover;
     align-items: center;
-    
+
 }
 
 /* CSS reset */
+
+
+
+/* Style Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(97, 166, 226);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Style Footer */
+
+
+/* Style hjem */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Style hjem */

@@ -312,7 +312,7 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Mobilvennlig justering */
+/* mindre skjerm justering */
 @media (max-width: 600px) {
     .Familie {
         grid-template-columns: 1fr 1fr;
@@ -373,18 +373,73 @@ p {
 /* Style for bildegalleri */
 
 /* Interesser style */
-.fotball {
+
+
+.fotball-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+
+    grid-template-areas:
+        "img1 img2 txt"
+        "img3 img3 txt";
+
+    padding: 50px;
 }
 
-.fotball>img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-    padding: 6px;
+.fot__img1 {
+    grid-area: img1;
+    padding: 10px;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+
+
+
+
+.fot__img2 {
+    grid-area: img2;
+    padding: 10px;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.fot__img3 {
+    grid-area: img3;
+    padding: 10px;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.fot__txt {
+    grid-area: txt;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    line-height: 1.6;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+
+.fotball-grid>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.headliner {
+    font-size: xx-large;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    place-items: center;
+    text-align: center;
+}
+
 
 /* Interesser style */
